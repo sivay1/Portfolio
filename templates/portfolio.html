@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sc ale=1.0">
+    <title>My portfolio</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/port.css') }}" type = "text/css">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <span id="myname">Sivavignesh</span>
+            <ul class="nav-items">
+                <li class="nav-item">
+                  <a href="#">Home</a>
+                  
+                <li class="nav-item">
+                  <a href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+        </nav>
+    </header>
+    <main class="main1">
+      <div class="intro">
+          <div class="text">
+            <p class="text1">Hello, I'm Sivavignesh,</p>
+            <p class="texy4">an Aspiring</p>
+            <p class="text2">Python Fullstack Web Developer</p>
+            <p class="text3">based in india.</p>
+            <br>
+            <br>
+            <a href="{{url_for('static',filename='ResumeSivavignesh.pdf')}}" download="ResumeSivavignesh.pdf" id="resume-button">
+              Resume
+            </a>
+          </div>
+          <div class="image">
+            <img src="{{url_for('static', filename='images/me.jpg')}}" width = "250" height="250" alt="profile-pic" loading="lazy">
+          </div>
+      </div>
+    </main>
+    <section id="about">
+      <div class="about">
+        <h2 class="about size">about.</h2>
+        <p class="aboutcontent">Hello, I'm Sivavignesh! After a fulfilling experience in data processing and verification, I took a career break, during which I focused on personal growth and exploration. Now, I'm excited to channel my attention to detail and love for learning into full-stack development. Aspiring Python Full-Stack Developer currently expanding my skills at UNIQ Technologies to transition into a dynamic, tech-focused career.</p>
+        <p class="aboutcontent abtsize"><span  class="bullet">●</span>&nbsp;2016-2019</p>
+        <p class="aboutcontent">Completed Bsc Computer Science in Manonmaiam Sundaranar University</p>
+        <p class="aboutcontent abtsize"><span  class="bullet">●</span>&nbsp;2019-2021</p>
+        <p class="aboutcontent">Senior representative at NTT DATA INFORMATION SERVICES(KPO)
+          Followed Standard Operating Procedures (SOPs) meticulously to ensure data consistency and accuracy in all processed records.
+Verified and validated data to maintain high-quality standards, enabling efficient data-driven decision-making across projects.
+Developed a keen eye for detail and a structured approach to data handling, which now serves as a foundation for accuracy in backend and database management within web development projects.
+        </p>
+        <p class="aboutcontent abtsize"><span  class="bullet">●</span>&nbsp;2021-2024</p>
+        <p class="aboutcontent">Working on my python fullstack Developer course at UNIQ Technologies.</p>
+      </div>
+    </section>
+    <footer class="foo">
+      <section id="contact">
+        <div class="contact">
+          <h2 class="contact size">contact.</h2>
+          <div class="contact-content">
+            <img src="{{ url_for('static',filename='images/contact.jpg') }}" alt="contact-pic" width="250" height="250" loading="lazy">
+            <p class="contact-text">I’d love to connect! Whether you have a job or internship opportunity or , a question about my work, or just want to say hello, feel free to reach out. I’m always excited to discuss new ideas, collaborations, and opportunities in the tech industry. You can connect with me directly through email or find me on LinkedIn and GitHub. Looking forward to hearing from you!.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:sivavigneshsubramanian@gmail.com">Gmail</a>
+            <a href="https://www.linkedin.com/in/sivavignesh-balasubramanian-8b915b162/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sivay1" target="_blank">GitHub</a>
+          </div>  
+        </div>
+      </section>
+      <span style="text-align: right;"><p>It is a simple flask static webpage.working on adding more dynamic features.</p></span>
+    </footer>
+</body>
+</html>

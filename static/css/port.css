@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+}
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #FBF8CC; /*F5EE84 03045E*/
+    min-height: 200vh;
+  }
+#myname{
+    font-weight: 900;
+    color:#03045E
+}  
+  .navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the name and navbar */
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick the navbar to the top */
+    left: 0;
+    width: 100%; /* Make the navbar span the full width of the page */
+    padding: 20px 20px;
+    z-index: 1000; /* Ensure navbar stays on top of other content */ 
+  }  
+  
+  .nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    font-weight: 600;
+    flex: 1; /* Ensure items are spaced evenly */
+  }
+  
+  .nav-item {
+    position: relative; /* Important for positioning dropdowns */
+    
+    
+  }
+  
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    color: #03045E    
+}
+  
+.nav-item a:hover {
+    background-color: white;
+}  
+.main1{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.image{  
+    width: 50%;
+    
+}
+.image img{
+  border-radius: 50%;
+  box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  height: 250px;
+}
+.text{
+  display: block;
+  color: #03045E  
+}
+.text1{
+  font-size: 20px;
+  font-weight: bold;
+}
+.text2{
+  font-size: 40px;
+  font-weight: 1000;
+}
+.text3{
+  font-weight: bold;
+  font-size: 20px;
+}
+#resume-button{
+  font-size: 20px;
+  font-weight: bold;
+  width: 120px;
+  height: 60px;
+  box-shadow: 3px 3px 10px #F5EE84;
+  border-radius: 10px;
+  background-color: #F5EE84;
+  border:2px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #03045E;
+  text-decoration: none;
+  
+}
+.about{
+ text-align: justify;
+ width:70%;
+ padding: 50px;
+ margin-left: 120px;
+ color:#03045E  
+}
+.size{
+  font-size: 60px;
+  font-weight: bold;
+  color: #F5EE84
+}
+.aboutcontent{
+  margin-left: 200px;
+  margin-top: 20px; 
+}
+.bullet{
+  display: inline-block;
+  vertical-align:auto;
+  font-size: 24px;
+  margin-right: 1px;
+  
+}
+.abtsize{
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact{
+  text-align: justify;
+  width:70%;
+  margin-top: 60px;
+  margin-left: 100px;
+  color:#03045E;
+  margin-top:300px;
+  margin-bottom: 100px;
+  
+}
+.contact-content{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap:10px;
+}
+.size{
+  font-size: 60px;
+  font-weight: bold;
+  color: #F5EE84
+}
+
+.contact-content img {
+  
+  width: 250px;
+  height: 250px;
+  margin-right: 5px; /* Space between image and text */
+  margin-left: 100px;
+}
+.contact-links{
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  padding-left: 370px;
+}
+
+
+
+
+/* Base styles for larger screens (apply as the default) */
+
+/* Small phones (up to 375px wide) */
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .about, .contact {
+    padding: 1rem;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  .about p, .contact p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    text-align: justify; /* Optional for paragraph alignment */
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .main1 .intro {
+    gap: 15px;
+    text-align: center;
+  }
+
+  .image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text1, .text2, .text3 {
+    font-size: 1rem;
+  }
+
+  .about, .contact {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .contact-content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Phones (up to 640px wide) */
+@media only screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  .about, .contact {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .about p, .contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .main1 .intro {
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text1, .text2, .text3 {
+    font-size: 1.2rem;
+  }
+
+  .about, .contact {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-content img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large Phones (up to 768px wide) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .main1 .intro {
+    padding: 2rem;
+    gap: 25px;
+  }
+
+  .image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text1, .text2, .text3 {
+    font-size: 1.4rem;
+  }
+
+  .about, .contact {
+    font-size: 1rem;
+    padding: 1.2rem;
+    margin-left: 0;
+  }
+
+  .contact-content img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1rem;
+  }
+}
