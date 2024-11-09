@@ -180,31 +180,20 @@ body {
   body {
     font-size: 14px;
   }
-  .about, .contact {
-    padding: 1rem;
-    text-align: center;
-    margin: 10px auto;
-    max-width: 90%;
-  }
 
-  .about p, .contact p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-    text-align: justify; /* Optional for paragraph alignment */
-  }
   .navbar {
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
     padding: 10px;
   }
 
   .nav-items {
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
   }
 
   .main1 .intro {
+    flex-direction: column;
     gap: 15px;
     text-align: center;
   }
@@ -219,45 +208,29 @@ body {
   }
 
   .about, .contact {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    margin: 0;
-  }
-
-  .contact-content img {
-    width: 80px;
-    height: 80px;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
   }
 
   .contact-links {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    font-size: 0.8rem;
   }
 }
 
-/* Medium Phones (up to 640px wide) */
+/* Medium screens (up to 640px wide) */
 @media only screen and (max-width: 640px) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     padding: 15px;
   }
-  .about, .contact {
-    padding: 1.5rem;
-    max-width: 95%;
-  }
 
-  .about p, .contact p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    text-align: justify;
-  }
-  .main1 .intro {
-    gap: 20px;
+  .about, .contact {
+    width: 90%;
     padding: 1rem;
   }
 
@@ -270,34 +243,29 @@ body {
     font-size: 1.2rem;
   }
 
-  .about, .contact {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .contact-content img {
-    width: 100px;
-    height: 100px;
+  .aboutcontent, .contact-content {
+    font-size: 1rem;
   }
 
   .contact-links {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
   }
 }
 
-/* Large Phones (up to 768px wide) */
+/* Larger phones and tablets (up to 768px wide) */
 @media only screen and (max-width: 768px) {
   .navbar {
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    justify-content: center;
   }
 
   .main1 .intro {
-    padding: 2rem;
-    gap: 25px;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
   }
 
   .image img {
@@ -310,9 +278,10 @@ body {
   }
 
   .about, .contact {
+    width: 90%;
+    padding: 1rem;
     font-size: 1rem;
-    padding: 1.2rem;
-    margin-left: 0;
+    text-align: center;
   }
 
   .contact-content img {
@@ -321,8 +290,9 @@ body {
   }
 
   .contact-links {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
     font-size: 1rem;
   }
+}
