@@ -200,20 +200,22 @@ body {
   }
 
   .image img {
-    width: 60px;
-    height: 60px;
+    width: 100px; /* Adjusted for better visibility */
+    height: 100px;
+    margin: 10px 0;
   }
 
   .text1, .text2, .text3 {
-    font-size: 1rem;
-    line-height: 1.2;
+    font-size: 1.1rem;
+    line-height: 1.5; /* Increase line height for readability */
   }
 
+  /* Adjust content width for a paragraph-like flow */
   .about, .contact {
-    width: 100%;
-    padding: 1rem 0.5rem;
-    text-align: center;
-    font-size: 0.85rem;
+    width: 90%; /* Use most of the screen width */
+    padding: 1rem 10px;
+    text-align: justify; /* Justify text for paragraph style */
+    font-size: 0.9rem;
   }
 
   .contact-links {
@@ -222,10 +224,11 @@ body {
     gap: 6px;
   }
 
-  /* Adjusts padding/margin for spacing */
-  .content-section {
-    margin-bottom: 1rem;
-    padding: 0 1rem;
+  /* Add margin for spacing and readable paragraph structure */
+  .aboutcontent,
+  .contact-text {
+    margin: 0 10px;
+    text-align: justify;
   }
 }
 
@@ -247,6 +250,7 @@ body {
   .about, .contact {
     width: 95%;
     font-size: 0.85rem;
+    
   }
 
   .contact-links {
